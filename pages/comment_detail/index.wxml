@@ -1,0 +1,23 @@
+<view class="content">
+    <view class="content_title">{{newList.name}}</view>
+    <view class="content_content">{{newList.content}}</view>
+</view>
+<view class="comment">
+    <view class="comment_title">当下评论</view>
+    <view class="comment_content"
+    wx:for = "{{comList}}"
+    wx:key = "id">
+        <view class="con_user">
+            <image mode="widthFix" src = "{{item.image_src}}"></image>
+            <view class="con_name">{{item.name}}</view>
+        </view>
+            <view class="con_content">{{item.content}}</view>
+        </view>
+    <input class="input" bindinput="getContent" placeholder="请输入评论内容" value="{{content}}"></input>
+    <view wx:if="{{userInfo.avatarUrl}}" class="com_add">
+        <button type="primary" bindtap="bindleGetCom">发表评论</button>
+    </view>
+    <view wx:else class="user_btn">
+        <button type="primary" bindtap="getUserProfile">登录</button>
+    </view>
+</view>

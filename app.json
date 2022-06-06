@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/comment_list/index",
+    "pages/comment_detail/index",
+    "pages/mine/index",
+    "pages/login/index",
+    "pages/activity_list/index",
+    "pages/activity_detail/index",
+    "pages/report/index",
+    "pages/collect/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "疫情防控管理",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/index.png",
+        "selectedIconPath": "icons/index-re.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "icons/mine.png",
+        "selectedIconPath": "icons/mine-re.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

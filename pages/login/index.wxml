@@ -1,0 +1,18 @@
+<view class="collect">
+    <view class="collect_title">活动报名</view>
+</view>
+<view class="collect_content">
+    <navigator
+        wx:for="{{enroll}}"
+        wx:key="_id"
+        url="/pages/activity_detail/index?_id={{item._id}}"
+    >
+        <view class="content_list" >
+            <view class="pic"><image mode="widthFix" src="{{item.image_src}}" /></view>
+            <view class="list_one">
+                <text class='name'>{{item.act_name}}</text>
+                <text class='adress'>{{item.act_adress}}</text>
+            </view>
+        </view>
+    </navigator>
+</view>

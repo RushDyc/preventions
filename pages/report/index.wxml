@@ -1,0 +1,53 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="user">
+    <view class="report">基本信息</view>
+    <view class="message">
+        <view class="mes_content">
+            <view class="title">姓名</view>
+            <input type="nickname" name="name" value = "{{message.name}}" ></input>
+        </view>
+        <view class="mes_content">
+            <view class="title">手机号码</view>
+            <input type="number" maxlength="11" name="phone" value = "{{message.phone}}"></input>
+        </view>
+        <view class="mes_content">
+            <view class="title">身份证号码</view>
+            <input type="idcard" name="number" value = "{{message.number}}"></input>
+        </view>
+        <view class="mes_content">
+            <view class="title">性别</view>
+            <input type="text" name="sex" value = "{{message.sex}}"></input>
+        </view>
+        <view class="mes_content">
+            <view class="title">出生日期</view>
+            <input type="text" name="date" placeholder="2000-02-02" value = "{{message.date}}"></input>
+        </view>
+        <view class="mes_content">
+            <view class="title">国家/地区</view>
+            <input type="text" name="country" placeholder="中国大陆" value = "{{message.country}}"></input>
+        </view>
+    </view>
+</view>
+<view class="health">
+    <view class="user_health">健康状况</view>
+    <checkbox-group name="checkbox-group">
+        <checkbox value="{{item.name}}"
+         wx:for="{{healthItem}}"
+         wx:key = "id">
+        {{item.name}}     
+        </checkbox>
+    </checkbox-group>
+</view>
+<view class="people">
+    <view class="user_people">人员类型</view>
+    <radio-group name = "radio-group">
+        <radio value="{{item.name}}"
+            wx:for="{{peopleItem}}"
+            wx:key = "id">
+            {{item.name}}   
+        </radio> 
+    </radio-group>    
+</view>
+<button type="primary" form-type="submit" class="btn_1">提交</button>
+<button form-type="reset" class="btn_2">清除</button>
+</form>

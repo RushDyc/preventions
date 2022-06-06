@@ -1,0 +1,45 @@
+.user .report {
+  font-size: 45rpx;
+  font-weight: 700;
+  margin: 20rpx 40rpx;
+}
+.user .message .mes_content .title {
+  font-size: 32rpx;
+  margin: 0 40rpx 10rpx ;
+}
+.user .message .mes_content input {
+  font-size: 35rpx;
+  margin: 0 40rpx 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.health .user_health {
+  font-size: 45rpx;
+  font-weight: 700;
+  margin: 40rpx 40rpx;
+}
+.health checkbox {
+  display: flex;
+  font-size: 35rpx;
+  margin: 10rpx 40rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.people {
+  margin-bottom: 50rpx;
+}
+.people .user_people {
+  font-size: 45rpx;
+  font-weight: 700;
+  margin: 40rpx 40rpx;
+}
+.people radio {
+  display: flex;
+  font-size: 35rpx;
+  margin: 10rpx 40rpx;
+  padding-bottom: 15rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+button {
+  width: 40%;
+  margin-bottom: 30rpx;
+}
